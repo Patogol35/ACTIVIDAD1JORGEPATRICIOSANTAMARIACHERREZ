@@ -1,0 +1,284 @@
+/*Estilo para el body */
+      body{
+background-color: rgb(230, 238, 240);
+
+      }
+
+
+/* Estilos para la pagina de Bienvenidos*/
+.patricio {
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: white;
+  margin: auto;
+  padding: 0;
+  width: 800px;
+
+}
+.logopatricio{
+  width: 500px;
+  height: 380px;
+  }
+
+  .actividad{
+    background-color: rgb(76, 43, 226);
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .texto{
+  
+    background-color: rgb(63, 166, 214);
+    font-weight: bold;
+    text-align: center;
+  }
+
+
+   /*Estilo para el menú */
+      .menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(217, 214, 230);
+        padding: 20px;
+        width: 100%;
+      
+      }
+
+     
+      .menu ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        
+      }
+      
+      .menu li {
+        margin-right: 20px;
+        
+      }
+      
+      .menu a {
+        color: #333;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+        transition: all 0.3s ease;
+        font-size: 14px;
+      }
+      
+      .menu a:hover {
+        color: #ffffff;
+       
+      }
+
+       ul li:hover {
+        background-color: rgb(112, 112, 211);
+      
+      
+      }
+      @media (max-width: 768px) {
+        .menu {
+          flex-direction: column;
+        }
+      
+        .menu ul {
+          flex-direction: column;
+        }
+      
+        .menu li {
+          margin-right: 0;
+          margin-bottom: 10px;
+        }
+      }         
+      /* Estilos para las imagenes*/
+      .logo
+      {
+       
+      width: 240px;
+      height: 100px;
+      }
+
+      .logov
+      {
+       
+      width: 380px;
+      height: 400px;
+      }
+
+
+/* Estilos para la pagina de especialidades*/
+.especialidades {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.especialidad {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #ffffff;
+  background-color: #1061a8;
+}
+
+.e1,
+.e2,
+.e3,
+.e4 {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin: 2rem 0;
+  background-color: #bdcbd8;
+}
+
+.e1 h2,
+.e2 h2,
+.e3 h2,
+.e4 h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+  background-color: rgb(35, 135, 194);
+  color: #f2f2f2;
+}
+
+      
+.patricio2{
+  background-color: rgba(45, 146, 212, 0.774);
+  font-weight: bold;
+  text-align: center;
+font-weight: 30px;
+
+}
+
+
+ /* Estilos footer*/
+ .footer-estilo {
+  background-color: #bfbfd6;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer-estilo .footer-lista {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.footer-estilo .footer-lista li {
+  margin: 0 10px;
+}
+
+.footer-estilo .footer-lista li a {
+  color: #03101b;
+  text-decoration: none;
+}
+
+.footer-estilo .footer-lista li a:hover {
+  color: #ffffff;
+}
+
+@media screen and (max-width: 800px) {
+  .footer-estilo {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
+
+/* Sistema de grillas */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+
+  grid-gap: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Estilo para los input */
+  .inputestilo
+  {
+
+    border: 5px solid #ccc;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: border-color 0.9s ease-in-out;
+    width: 600px;
+    height: 40px;
+  }
+
+  
+  .inputestilo:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+
+  /* estilos para los botones */
+  .boton{
+
+    background-color: blue;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    margin: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    border: 1px solid black;
+  border-radius: 5px;
+  }
+  boton:hover {
+    cursor: pointer;
+  }
+  boton:active {
+    background-color: red;
+    color: white;
+  }
+
+/* Estilos para los form */
+  form {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  /* Estilos para el texto */
+  .estilostexto{
+
+    background-color: rgb(76, 43, 226);
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    width:100%;
+  
+   }
+
+/* Estilos para los div */
+   .destilo
+   {
+      width: 100%;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+
+   .ima{
+
+    width: 500px;
+
+    height: 400px;
+   }
