@@ -1,284 +1,254 @@
-/*Estilo para el body */
-      body{
-background-color: rgb(230, 238, 240);
-
-      }
-
-
-/* Estilos para la pagina de Bienvenidos*/
-.patricio {
-  background-color: #f2f2f2;
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  color: white;
-  margin: auto;
-  padding: 0;
-  width: 800px;
-
+/* 🎨 Variables globales de color y tipografía */
+:root {
+  --color-primario: #1e73be;
+  --color-secundario: #4c2be2;
+  --color-acento: #23a0d6;
+  --color-fondo: #e6eef0;
+  --color-texto: #333;
+  --color-blanco: #fff;
+  --color-gris: #bfbfd6;
+  --fuente-base: 'Segoe UI', Arial, sans-serif;
 }
-.logopatricio{
-  width: 500px;
-  height: 380px;
+
+/* 🌍 Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-fondo);
+  font-family: var(--fuente-base);
+  font-size: 16px;
+  color: var(--color-texto);
+  line-height: 1.5;
+}
+
+/* 📄 Página Bienvenida */
+.patricio {
+  background-color: var(--color-blanco);
+  max-width: 800px;
+  margin: auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+.logopatricio {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
+.actividad, .texto {
+  font-weight: bold;
+  text-align: center;
+  color: var(--color-blanco);
+  padding: 0.8rem;
+}
+
+.actividad {
+  background-color: var(--color-secundario);
+}
+
+.texto {
+  background-color: var(--color-acento);
+}
+
+/* 📋 Menú */
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-gris);
+  padding: 15px 20px;
+  flex-wrap: wrap;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+
+.menu a {
+  color: var(--color-texto);
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: var(--color-blanco);
+}
+
+.menu li:hover {
+  background-color: var(--color-secundario);
+  border-radius: 4px;
+  padding: 5px 10px;
+}
+
+/* 📱 Responsive menú */
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
-  .actividad{
-    background-color: rgb(76, 43, 226);
-    font-weight: bold;
-    text-align: center;
+  .menu ul {
+    flex-direction: column;
+    width: 100%;
   }
-  
-  .texto{
-  
-    background-color: rgb(63, 166, 214);
-    font-weight: bold;
-    text-align: center;
-  }
+}
 
+/* 🖼️ Imágenes */
+.logo {
+  width: 100%;
+  max-width: 240px;
+  height: auto;
+}
 
-   /*Estilo para el menú */
-      .menu {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: rgb(217, 214, 230);
-        padding: 20px;
-        width: 100%;
-      
-      }
+.logov {
+  width: 100%;
+  max-width: 380px;
+  height: auto;
+}
 
-     
-      .menu ul {
-        display: flex;
-        flex-direction: row;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        
-      }
-      
-      .menu li {
-        margin-right: 20px;
-        
-      }
-      
-      .menu a {
-        color: #333;
-        text-decoration: none;
-        font-size: 16px;
-        font-weight: bold;
-        text-transform: uppercase;
-        transition: all 0.3s ease;
-        font-size: 14px;
-      }
-      
-      .menu a:hover {
-        color: #ffffff;
-       
-      }
-
-       ul li:hover {
-        background-color: rgb(112, 112, 211);
-      
-      
-      }
-      @media (max-width: 768px) {
-        .menu {
-          flex-direction: column;
-        }
-      
-        .menu ul {
-          flex-direction: column;
-        }
-      
-        .menu li {
-          margin-right: 0;
-          margin-bottom: 10px;
-        }
-      }         
-      /* Estilos para las imagenes*/
-      .logo
-      {
-       
-      width: 240px;
-      height: 100px;
-      }
-
-      .logov
-      {
-       
-      width: 380px;
-      height: 400px;
-      }
-
-
-/* Estilos para la pagina de especialidades*/
+/* 🏷️ Especialidades */
 .especialidades {
   max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
+  margin: auto;
+  padding: 1rem;
 }
 
 .especialidad {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: bold;
-  margin-bottom: 2rem;
-  color: #ffffff;
-  background-color: #1061a8;
+  margin-bottom: 1.5rem;
+  color: var(--color-blanco);
+  background-color: var(--color-primario);
+  padding: 0.5rem;
+  border-radius: 5px;
 }
 
-.e1,
-.e2,
-.e3,
-.e4 {
+.e1, .e2, .e3, .e4 {
   border: 1px solid #ccc;
   padding: 1rem;
-  margin: 2rem 0;
+  margin-bottom: 1rem;
   background-color: #bdcbd8;
+  border-radius: 5px;
 }
 
-.e1 h2,
-.e2 h2,
-.e3 h2,
-.e4 h2 {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin: 0;
-  background-color: rgb(35, 135, 194);
-  color: #f2f2f2;
+.e1 h2, .e2 h2, .e3 h2, .e4 h2 {
+  background-color: var(--color-acento);
+  color: var(--color-blanco);
+  padding: 0.5rem;
+  border-radius: 4px;
 }
 
-      
-.patricio2{
-  background-color: rgba(45, 146, 212, 0.774);
-  font-weight: bold;
-  text-align: center;
-font-weight: 30px;
-
-}
-
-
- /* Estilos footer*/
- .footer-estilo {
-  background-color: #bfbfd6;
+/* 📌 Footer */
+.footer-estilo {
+  background-color: var(--color-gris);
   text-align: center;
   padding: 20px;
 }
 
-.footer-estilo .footer-lista {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+.footer-lista {
+  list-style: none;
   display: flex;
   justify-content: center;
+  gap: 15px;
+  padding: 10px 0;
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
 }
 
-.footer-estilo .footer-lista li {
-  margin: 0 10px;
-}
-
-.footer-estilo .footer-lista li a {
+.footer-lista a {
   color: #03101b;
   text-decoration: none;
 }
 
-.footer-estilo .footer-lista li a:hover {
-  color: #ffffff;
+.footer-lista a:hover {
+  color: var(--color-blanco);
 }
 
-@media screen and (max-width: 800px) {
-  .footer-estilo {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-}
-
-/* Sistema de grillas */
+/* 📦 Contenedor general con grid */
 .container {
   width: 100%;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: auto;
   display: grid;
-
-  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
 }
 
-@media screen and (max-width: 800px) {
-  .container {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-/* Estilo para los input */
-  .inputestilo
-  {
-
-    border: 5px solid #ccc;
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 5px;
-    transition: border-color 0.9s ease-in-out;
-    width: 600px;
-    height: 40px;
-  }
-
-  
-  .inputestilo:focus {
-    border-color: #007bff;
-    outline: none;
-  }
-
-  /* estilos para los botones */
-  .boton{
-
-    background-color: blue;
-    color: white;
-    font-size: 1.2rem;
-    padding: 10px 20px;
-    margin: 10px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    border: 1px solid black;
+/* 📝 Inputs */
+.inputestilo {
+  border: 2px solid #ccc;
+  padding: 10px;
+  font-size: 16px;
   border-radius: 5px;
-  }
-  boton:hover {
-    cursor: pointer;
-  }
-  boton:active {
-    background-color: red;
-    color: white;
-  }
+  width: 100%;
+  max-width: 600px;
+  transition: border-color 0.3s;
+}
 
-/* Estilos para los form */
-  form {
-    width: 100%;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    padding: 10px;
-  }
-  /* Estilos para el texto */
-  .estilostexto{
+.inputestilo:focus {
+  border-color: var(--color-primario);
+  outline: none;
+}
 
-    background-color: rgb(76, 43, 226);
-    font-weight: bold;
-    text-align: center;
-    color: white;
-    width:100%;
-  
-   }
+/* 🔘 Botones */
+.boton {
+  background-color: var(--color-primario);
+  color: var(--color-blanco);
+  font-size: 1rem;
+  padding: 10px 20px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
 
-/* Estilos para los div */
-   .destilo
-   {
-      width: 100%;
-      box-sizing: border-box;
-      border: 1px solid #ccc;
-      padding: 10px;
-    }
+.boton:hover {
+  background-color: var(--color-secundario);
+}
 
-   .ima{
+.boton:active {
+  background-color: red;
+}
 
-    width: 500px;
+/* 📄 Formularios */
+form {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 15px;
+  background-color: var(--color-blanco);
+  border-radius: 5px;
+}
 
-    height: 400px;
-   }
+/* 🖋️ Textos */
+.estilostexto {
+  background-color: var(--color-secundario);
+  font-weight: bold;
+  text-align: center;
+  color: var(--color-blanco);
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+/* 📦 Divs */
+.destilo {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.ima {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
