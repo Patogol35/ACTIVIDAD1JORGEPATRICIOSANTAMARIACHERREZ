@@ -33,9 +33,9 @@ function App() {
 <Route path='/' element={<Menu opciones={opcionesMenu} />} >
 <Route path='/ingreso' element={<Formulario ></Formulario>}/>
 <Route path='/' element={<BIENVENIDOS 
-Actividad={"ACTIVIDAD REALIZADA POR JORGE PATRICIO SANTAMARÍA"} 
+Actividad={"ACTIVIDAD REALIZADA POR JORGE PATRICIO SANTAMARÍA CHERREZ"} 
 bienvenidos={"BIENVENIDOS"} 
-texto={"Santa Prisca es una clínica veterinaria de Ambato- Ecuador que ofrece los siguientes servicios:Tratamiento y hospitalización de mascotas, cirugías, traumatología, fisioterapia, peluquería canina, venta de alimentos EMERGENCIAS LAS 24 HORAS"}></BIENVENIDOS>}/>
+texto={"Veterinaria Ambato es una clínica veterinaria de Ambato- Ecuador que ofrece los siguientes servicios:Tratamiento y hospitalización de mascotas, cirugías, traumatología, fisioterapia, peluquería canina, venta de alimentos EMERGENCIAS LAS 24 HORAS"}></BIENVENIDOS>}/>
 <Route path='/busqueda' element={<Busqueda busqueda={"ESCRIBE EL NOMBRE DE TU MASCOTA"}></Busqueda>}/>
 <Route path='/agendar' element={<Formulariovisitas></Formulariovisitas>}/>
 <Route path='/especialidades' element={<Especialidades especialidades={"CLÍNICA SANTA PRISCA"}
