@@ -1,16 +1,16 @@
-/* 🎨 Variables globales de color y tipografía */
+/* 🎨 Variables globales */
 :root {
-  --color-primario: #1e73be;
-  --color-secundario: #4c2be2;
-  --color-acento: #23a0d6;
-  --color-fondo: #e6eef0;
+  --color-primario: #4c2be2;
+  --color-secundario: #3fa6d6;
+  --color-fondo: rgb(230, 238, 240);
   --color-texto: #333;
   --color-blanco: #fff;
-  --color-gris: #bfbfd6;
-  --fuente-base: 'Segoe UI', Arial, sans-serif;
+  --color-hover: rgb(112, 112, 211);
+  --ancho-maximo: 1200px;
+  --fuente-principal: "Segoe UI", Arial, sans-serif;
 }
 
-/* 🌍 Reset básico */
+/* Reset básico */
 * {
   margin: 0;
   padding: 0;
@@ -19,56 +19,62 @@
 
 body {
   background-color: var(--color-fondo);
-  font-family: var(--fuente-base);
-  font-size: 16px;
+  font-family: var(--fuente-principal);
   color: var(--color-texto);
   line-height: 1.5;
 }
 
-/* 📄 Página Bienvenida */
+/* Contenedor central */
+.container {
+  width: 100%;
+  max-width: var(--ancho-maximo);
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* 📌 Estilos página Bienvenidos */
 .patricio {
-  background-color: var(--color-blanco);
-  max-width: 800px;
+  background-color: #f2f2f2;
+  color: var(--color-blanco);
   margin: auto;
   padding: 1rem;
-  text-align: center;
+  width: 90%;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.logopatricio {
-  width: 100%;
-  max-width: 500px;
+/* Imagen adaptable */
+.logopatricio,
+.logo,
+.logov,
+.ima {
+  max-width: 100%;
   height: auto;
+  display: block;
+  margin: auto;
 }
 
-.actividad, .texto {
-  font-weight: bold;
-  text-align: center;
-  color: var(--color-blanco);
-  padding: 0.8rem;
-}
-
-.actividad {
-  background-color: var(--color-secundario);
-}
-
-.texto {
-  background-color: var(--color-acento);
-}
-
-/* 📋 Menú */
+/* 🗂 Menú moderno */
 .menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--color-gris);
-  padding: 15px 20px;
+  background-color: rgb(217, 214, 230);
+  padding: 1rem 2rem;
   flex-wrap: wrap;
 }
 
 .menu ul {
   display: flex;
   list-style: none;
-  gap: 15px;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.menu li {
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
 }
 
 .menu a {
@@ -76,18 +82,14 @@ body {
   text-decoration: none;
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 14px;
-  transition: color 0.3s;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
 }
 
 .menu a:hover {
   color: var(--color-blanco);
-}
-
-.menu li:hover {
-  background-color: var(--color-secundario);
-  border-radius: 4px;
-  padding: 5px 10px;
+  background-color: var(--color-hover);
+  border-radius: 5px;
 }
 
 /* 📱 Responsive menú */
@@ -101,154 +103,124 @@ body {
     flex-direction: column;
     width: 100%;
   }
+
+  .menu li {
+    width: 100%;
+  }
+
+  .menu a {
+    display: block;
+    width: 100%;
+  }
 }
 
-/* 🖼️ Imágenes */
-.logo {
-  width: 100%;
-  max-width: 240px;
-  height: auto;
-}
-
-.logov {
-  width: 100%;
-  max-width: 380px;
-  height: auto;
-}
-
-/* 🏷️ Especialidades */
+/* 📌 Especialidades */
 .especialidades {
   max-width: 800px;
-  margin: auto;
-  padding: 1rem;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .especialidad {
   font-size: 2rem;
   font-weight: bold;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
   color: var(--color-blanco);
-  background-color: var(--color-primario);
-  padding: 0.5rem;
-  border-radius: 5px;
+  background-color: #1061a8;
+  padding: 1rem;
+  border-radius: 8px;
 }
 
 .e1, .e2, .e3, .e4 {
   border: 1px solid #ccc;
   padding: 1rem;
-  margin-bottom: 1rem;
+  margin: 2rem 0;
   background-color: #bdcbd8;
-  border-radius: 5px;
+  border-radius: 8px;
 }
 
 .e1 h2, .e2 h2, .e3 h2, .e4 h2 {
-  background-color: var(--color-acento);
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: rgb(35, 135, 194);
   color: var(--color-blanco);
   padding: 0.5rem;
-  border-radius: 4px;
+  border-radius: 5px;
 }
 
 /* 📌 Footer */
 .footer-estilo {
-  background-color: var(--color-gris);
+  background-color: #bfbfd6;
   text-align: center;
   padding: 20px;
 }
 
-.footer-lista {
-  list-style: none;
+.footer-estilo .footer-lista {
+  list-style-type: none;
   display: flex;
   justify-content: center;
-  gap: 15px;
-  padding: 10px 0;
+  flex-wrap: wrap;
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
 }
 
-.footer-lista a {
-  color: #03101b;
-  text-decoration: none;
+.footer-estilo .footer-lista li {
+  margin: 0 10px;
 }
 
-.footer-lista a:hover {
+.footer-estilo .footer-lista li a {
+  color: #03101b;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-estilo .footer-lista li a:hover {
   color: var(--color-blanco);
 }
 
-/* 📦 Contenedor general con grid */
-.container {
-  width: 100%;
-  max-width: 1200px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-}
-
-/* 📝 Inputs */
+/* 📌 Inputs */
 .inputestilo {
   border: 2px solid #ccc;
   padding: 10px;
   font-size: 16px;
   border-radius: 5px;
+  transition: border-color 0.3s ease-in-out;
   width: 100%;
   max-width: 600px;
-  transition: border-color 0.3s;
 }
 
 .inputestilo:focus {
-  border-color: var(--color-primario);
+  border-color: var(--color-secundario);
   outline: none;
 }
 
-/* 🔘 Botones */
+/* 📌 Botones */
 .boton {
   background-color: var(--color-primario);
   color: var(--color-blanco);
-  font-size: 1rem;
+  font-size: 1.2rem;
   padding: 10px 20px;
-  margin: 10px 0;
+  margin: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   border: none;
   border-radius: 5px;
-  cursor: pointer;
-  transition: all 0.3s;
+  transition: all 0.3s ease;
 }
 
 .boton:hover {
-  background-color: var(--color-secundario);
+  cursor: pointer;
+  background-color: var(--color-hover);
 }
 
 .boton:active {
   background-color: red;
 }
 
-/* 📄 Formularios */
+/* 📌 Formularios */
 form {
   width: 100%;
   border: 1px solid #ccc;
-  padding: 15px;
-  background-color: var(--color-blanco);
-  border-radius: 5px;
-}
-
-/* 🖋️ Textos */
-.estilostexto {
-  background-color: var(--color-secundario);
-  font-weight: bold;
-  text-align: center;
-  color: var(--color-blanco);
-  padding: 0.5rem;
-  border-radius: 4px;
-}
-
-/* 📦 Divs */
-.destilo {
-  width: 100%;
-  border: 1px solid #ccc;
   padding: 10px;
-}
-
-.ima {
-  width: 100%;
-  max-width: 500px;
-  height: auto;
+  background: var(--color-blanco);
+  border-radius: 5px;
 }
