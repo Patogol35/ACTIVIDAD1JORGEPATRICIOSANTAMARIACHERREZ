@@ -10,7 +10,7 @@ export const Footer = (props) => {
           <li><a href="/imagenes">IMÁGENES</a></li>
           <li><a href="https://www.facebook.com/clinicaveterinariasantaprisca">SIGUENOS EN FACEBOOK</a></li>
         </ul>
-        <p>&copy; {props.year} Clínica Veterinaria Ambato Ambato - Ecuador</p>
+        <p>&copy; {props.year} Clínica Veterinaria Proyecto Jorge Patricio Santamaría Cherrez</p>
       </footer>
     </div>
   );
