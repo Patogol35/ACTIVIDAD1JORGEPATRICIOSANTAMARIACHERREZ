@@ -38,7 +38,7 @@ bienvenidos={"BIENVENIDOS"}
 texto={"Veterinaria Ambato es una clínica veterinaria de Ambato- Ecuador que ofrece los siguientes servicios:Tratamiento y hospitalización de mascotas, cirugías, traumatología, fisioterapia, peluquería canina, venta de alimentos EMERGENCIAS LAS 24 HORAS"}></BIENVENIDOS>}/>
 <Route path='/busqueda' element={<Busqueda busqueda={"ESCRIBE EL NOMBRE DE TU MASCOTA"}></Busqueda>}/>
 <Route path='/agendar' element={<Formulariovisitas></Formulariovisitas>}/>
-<Route path='/especialidades' element={<Especialidades especialidades={"CLÍNICA SANTA PRISCA"}
+<Route path='/especialidades' element={<Especialidades especialidades={"CLÍNICA VETERINARIA"}
  especialidades2={"ESPECIALIDADES"} 
  doc1={"Dr. Patricio Santamaría: Cirugías"} 
  doc2={"Dr. Julio Rodriguez: Traumatología"}
