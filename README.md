@@ -13,11 +13,12 @@ Cuenta con un diseño responsive y funcional, pensado para brindar una experienc
 
 📑 Menú de navegación implementado con React Router.
 
-📅 Agenda y contacto para reservar citas.
+📅 Agenda para reservar citas.
 
 🎨 Diseño responsive adaptado a móviles, tablets y escritorio.
 
-⚡ Interfaz ligera y rápida gracias a React.
+📝 Formulario de ingreso de datos para registrar información.
+
 
 
 🛠️ Tecnologías utilizadas
