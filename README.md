@@ -1,9 +1,9 @@
-
-
 🐶🐱 Veterinaria App
 
 Aplicación web desarrollada en React para la gestión y visualización de información de una clínica veterinaria.
 Cuenta con un diseño responsive y funcional, pensado para brindar una experiencia clara y amigable a los usuarios.
+
+---
 
 🚀 Características
 
@@ -19,7 +19,7 @@ Cuenta con un diseño responsive y funcional, pensado para brindar una experienc
 
 📝 Formulario de ingreso de datos para registrar información.
 
-
+---
 
 🛠️ Tecnologías utilizadas
 
@@ -29,6 +29,7 @@ JavaScript
 
 CSS (estilos personalizados)
 
+---
 
 📦 Instalación y uso
 
@@ -50,7 +51,6 @@ npm start
 El proyecto se ejecutará normalmente en:
 
 http://localhost:3000
-
 
 
 ---
