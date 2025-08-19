@@ -56,3 +56,4 @@ http://localhost:3000
 ---
 
 📌 Desarrollado por: Jorge Patricio Santamaría Cherrez
+Máster en Ingeniería de Software y Sistemas Informáticos 
