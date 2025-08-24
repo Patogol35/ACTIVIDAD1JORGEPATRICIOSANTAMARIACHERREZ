@@ -35,18 +35,19 @@ CSS (estilos personalizados)
 
 1. Clona el repositorio
 
+git clone https://github.com/Patogol35/ACTIVIDAD1JORGEPATRICIOSANTAMARIACHERREZ
+
 2. Ingresa a la carpeta del proyecto:
 
+cd ACTIVIDAD1JORGEPATRICIOSANTAMARIACHERREZ
 
 3. Instala las dependencias:
 
 npm install
 
-
 4. Ejecuta el proyecto:
 
 npm start
-
 
 5. Abre en el navegador:
 
