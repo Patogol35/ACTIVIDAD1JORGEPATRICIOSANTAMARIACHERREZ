@@ -5,19 +5,19 @@ Cuenta con un diseño responsive y funcional, pensado para brindar una experienc
 
 ---
 
-🚀 Características
+✨ Funcionalidades
 
-🐾 Inicio atractivo con información de la clínica.
+- Inicio atractivo con información de la clínica.
 
-📋 Listado de servicios veterinarios.
+- Listado de servicios veterinarios.
 
-📑 Menú de navegación implementado con React Router.
+- Menú de navegación implementado con React Router.
 
-📅 Agenda para reservar citas.
+- Agenda para reservar citas.
 
-🎨 Diseño responsive adaptado a móviles, tablets y escritorio.
+- Diseño responsive adaptado a móviles, tablets y escritorio.
 
-📝 Formulario de ingreso de datos para registrar información.
+- Formulario de ingreso de datos para registrar información.
 
 ---
 
@@ -31,7 +31,7 @@ CSS (estilos personalizados)
 
 ---
 
-📦 Instalación y uso
+📦 Instalación y ejecución 
 
 1. Clona el repositorio
 
