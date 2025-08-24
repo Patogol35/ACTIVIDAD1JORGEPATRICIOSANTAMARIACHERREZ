@@ -21,7 +21,7 @@ Cuenta con un diseño responsive y funcional, pensado para brindar una experienc
 
 ---
 
-🛠️ Tecnologías utilizadas
+⚙️ Tecnologías utilizadas
 
 React (CRA - Create React App)
 
@@ -35,20 +35,20 @@ CSS (estilos personalizados)
 
 1. Clona el repositorio
 
+2. Ingresa a la carpeta del proyecto:
 
-2. Instala las dependencias
+
+3. Instala las dependencias:
 
 npm install
 
 
-3. Ejecuta el proyecto
+4. Ejecuta el proyecto:
 
 npm start
 
 
-4. Abrir en el navegador
-
-El proyecto se ejecutará normalmente en:
+5. Abre en el navegador:
 
 http://localhost:3000
 
