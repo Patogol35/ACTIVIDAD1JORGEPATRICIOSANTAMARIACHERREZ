@@ -5,6 +5,10 @@ Cuenta con un diseño responsive y funcional, pensado para brindar una experienc
 
 ---
 
+Ver la aplicación desplegada en Vercel:
+
+---
+
 ✨ Funcionalidades
 
 - Inicio atractivo con información de la clínica.
