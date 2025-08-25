@@ -7,6 +7,8 @@ Cuenta con un diseño responsive y funcional, pensado para brindar una experienc
 
 Ver la aplicación desplegada en Vercel:
 
+https://actividad-1-jorgepatriciosantamaria.vercel.app/
+
 ---
 
 ✨ Funcionalidades
